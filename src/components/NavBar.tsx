@@ -77,7 +77,7 @@ const NavBar = () => {
             </Link>
           ))}
           <Link
-            href="/"
+            href="#contact"
             onClick={() => setMobileOpen(false)}
             className="bg-[#F7C62F] text-black/80 px-4 py-2 rounded-3xl font-semibold text-sm hover:bg-yellow-400 transition mt-4"
           >

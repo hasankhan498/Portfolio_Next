@@ -1,5 +1,7 @@
 "use client"
 import myImage from "@/assets/imgs/ai4.jpeg";
+import portfolio_img from "@/assets/imgs/hero-port.png";
+import projectImage3 from '@/assets/imgs/project3.png';
 import { useState } from "react";
 import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
@@ -31,12 +33,12 @@ export const projects: ProjectType[] = [
     // ================= FRONTEND =================
     {
         id: 1,
-        img: myImage,
+        img: portfolio_img,
         categ: "Frontend",
         title: "Developer Portfolio",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
         desc: "A modern developer portfolio with smooth animations, responsive layout, and clean UI.",
-        link: "https://yourportfolio.com",
+        link: "https://portfolio-nine-theta-61.vercel.app/",
     },
     {
         id: 2,
@@ -47,28 +49,20 @@ export const projects: ProjectType[] = [
         desc: "High-conversion SaaS landing page with optimized sections and responsive design.",
         link: "https://saaslanding.com",
     },
-    {
-        id: 3,
-        img: myImage,
-        categ: "Frontend",
-        title: "Tech Blog Website",
-        tech: ["Next.js", "Markdown", "Tailwind CSS"],
-        desc: "A fast and SEO-friendly blog platform with dynamic routing and markdown support.",
-        link: "https://techblog.com",
-    },
+    
 
     // ================= FULL STACK =================
     {
-        id: 4,
-        img: myImage,
+        id: 3,
+        img: projectImage3,
         categ: "Full Stack",
-        title: "E-Commerce Platform",
-        tech: ["Next.js", "Node.js", "MongoDB", "Stripe", "JWT"],
-        desc: "Complete e-commerce solution with authentication, payments, and admin dashboard.",
+        title: "ExpenseFlow",
+        tech: ["Next.js", "Gen AI", "MongoDB", "TypeScript", "Tailwind"],
+        desc: "A smart expense tracker that helps users monitor income and expenses effortlessly, giving clear insight into their spending.",
         link: "https://mystore.com",
     },
     {
-        id: 5,
+        id: 4,
         img: myImage,
         categ: "Full Stack",
         title: "Admin Dashboard",
@@ -76,19 +70,11 @@ export const projects: ProjectType[] = [
         desc: "Data-driven admin panel with real-time statistics and role-based access control.",
         link: "https://admindashboard.com",
     },
-    {
-        id: 6,
-        img: myImage,
-        categ: "Full Stack",
-        title: "Task Management App",
-        tech: ["Next.js", "Prisma", "MySQL", "NextAuth"],
-        desc: "Task management system with authentication, CRUD operations, and user roles.",
-        link: "https://taskmanager.com",
-    },
+    
 
     // ================= UI / UX =================
     {
-        id: 7,
+        id: 5,
         img: myImage,
         categ: "UI/UX",
         title: "Mobile App UI Design",
@@ -97,7 +83,7 @@ export const projects: ProjectType[] = [
         link: "https://figma.com/file/mobile-ui",
     },
     {
-        id: 8,
+        id: 6,
         img: myImage,
         categ: "UI/UX",
         title: "Website Redesign",
@@ -105,15 +91,7 @@ export const projects: ProjectType[] = [
         desc: "Complete website redesign with improved UX flow and visual hierarchy.",
         link: "https://figma.com/file/web-redesign",
     },
-    {
-        id: 9,
-        img: myImage,
-        categ: "UI/UX",
-        title: "Dashboard UX Case Study",
-        tech: ["Figma", "UX Research", "User Flow"],
-        desc: "UX case study focusing on data visualization and user-centric dashboard layouts.",
-        link: "https://figma.com/file/dashboard-ux",
-    },
+    
 ]
 
 const Projects = () => {
